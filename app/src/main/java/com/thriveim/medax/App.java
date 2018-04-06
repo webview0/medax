@@ -1,4 +1,4 @@
-package com.bignerdranch.android.splash;
+package com.thriveim.medax;
 
 import android.app.Application;
 import android.os.SystemClock;

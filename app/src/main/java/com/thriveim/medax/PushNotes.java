@@ -1,9 +1,9 @@
-package com.bignerdranch.android.splash;
+package com.thriveim.medax;
 
-import android.app.Service;
 import android.content.Intent;
-import android.os.IBinder;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
@@ -12,6 +12,13 @@ public class PushNotes extends FirebaseMessagingService {
     private final String TAG = "pushnotes";
 
     public PushNotes() {
+        Log.d(TAG, "instantiating class!");
+    }
+
+    private void sendMessage(String m) {
+        Intent intent = new Intent("message");
+        intent.putExtra("message", m);
+        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
     }
 
     @Override
@@ -50,6 +57,7 @@ public class PushNotes extends FirebaseMessagingService {
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
             Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
+            sendMessage(remoteMessage.getNotification().getBody());
         }
 
         // Also if you intend on generating your own notifications as a result of a received FCM

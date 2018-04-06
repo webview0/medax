@@ -1,8 +1,4 @@
-package com.bignerdranch.android.splash;
-
-import android.content.Context;
-import android.webkit.JavascriptInterface;
-import android.widget.Toast;
+package com.thriveim.medax;
 
 import android.content.Context;
 import android.webkit.JavascriptInterface;
