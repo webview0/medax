@@ -11,7 +11,9 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-        // Don't do this! This is just so cold launches take some time
+        // Don't do this! This is just so cold launches take some time,
+        // so you can see the splash screen.  It's a demonstration.  We
+        // 'll remove this.
         SystemClock.sleep(TimeUnit.SECONDS.toMillis(3));
     }
 }
