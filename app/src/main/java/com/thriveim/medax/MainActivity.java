@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
 
         /* let the show begin */
-        myWebView.loadUrl("http://www.toledo.com/index.php?src=directory&view=GigGuide&srctype=App_GigGuide_lister");
+        myWebView.loadUrl("https://www.medaxiom.com/index.php?src=directory&view=ResourceCenter&srctype=ResourceCenter");
 
     }
 }

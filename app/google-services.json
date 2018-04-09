@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1087554723097",
+    "firebase_url": "https://medaxiom-b6e11.firebaseio.com",
+    "project_id": "medaxiom-b6e11",
+    "storage_bucket": "medaxiom-b6e11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087554723097:android:bdd29ee869928740",
+        "android_client_info": {
+          "package_name": "com.thriveim.medax"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087554723097-5bmfs4orh7bia1d2mkt0sf3lug2kdsth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6jHfOnhszCuqT0Ok2KzksFknWcamkPNI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
