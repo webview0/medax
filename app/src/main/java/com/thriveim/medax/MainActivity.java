@@ -19,6 +19,7 @@ import com.thriveim.medax.R;
 
 public class MainActivity extends AppCompatActivity {
     private final String TAG = "mainactivity";
+    private final String url = "http://www.medaxiom.com/index.php?src=directory&view=ResourceCenter&srctype=ResourceCenter";
 
     private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
         @Override
@@ -68,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
 
         /* let the show begin */
-        myWebView.loadUrl("https://www.medaxiom.com/index.php?src=directory&view=ResourceCenter&srctype=ResourceCenter");
-
+        myWebView.loadUrl(url);
     }
 }
